@@ -28,7 +28,9 @@ class Router {
 	 *
 	 * @var int
 	 */
-	public static $http_status_code = 403;
+	// public static $http_status_code = 403;
+	// Default to a 200 status code so that queries for public posts work successfully
+	public static $http_status_code = 200;
 
 	/**
 	 * Router constructor.
